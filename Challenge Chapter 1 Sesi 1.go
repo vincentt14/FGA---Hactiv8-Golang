@@ -7,7 +7,7 @@ func main() {
 	var q bool = true
 	var angka int = 21
 	var hex int = 15
-	rusia := 'Я'
+	var rusia rune = 'Я'
 	r := '?'
 	var k float64 = 123.456
 
@@ -15,7 +15,7 @@ func main() {
 	fmt.Printf("%T \n", i)
 	fmt.Printf("%%\n")
 	fmt.Printf("%v \n", q)
-	fmt.Println(rune(rusia))
+	fmt.Printf("%v \n", rusia)
 	fmt.Printf("%c \n", r)
 	fmt.Printf("%d \n", angka)
 	fmt.Printf("%o \n", angka)
