@@ -15,8 +15,8 @@ func main() {
 			for index, value := range tajik {
 				fmt.Printf("character %#U starts at byte position %d \n", value, index)
 			}
+		} else {
+			fmt.Println("Nilai j =", j)
 		}
-
-		fmt.Println("Nilai j =", j)
 	}
 }
