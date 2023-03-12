@@ -3,28 +3,21 @@ package main
 import "fmt"
 
 func main() {
-	var a string = "a"
+	tajik := "САШАРВО"
 
-	var b int = 10
+	for i := 0; i < 5; i++ {
+		fmt.Println("Nilai i =", i)
+	}
 
-	var c bool = true
+	for j := 0; j < 5; j++ {
+		fmt.Println("Nilai j =", j)
+	}
 
-	_, _, _ = a, b, c
+	for index, value := range tajik {
+		fmt.Printf("character %#U starts at byte position %d \n", value, index)
+	}
 
-	//Buatlah kode yang dapat menghasilkan suatu result di terminal seperti pada comment dibawah ini berdasarkan dari variable yang telah disediakan diatas :)
-	/**
-	  a
-	  string
-	  10
-	  int
-	  c
-	  bool
-	**/
-
-	fmt.Printf("%s \n", a)
-	fmt.Printf("%T \n", a)
-	fmt.Printf("%d \n", b)
-	fmt.Printf("%T \n", b)
-	fmt.Printf("%t \n", c)
-	fmt.Printf("%T", c)
+	for j := 6; j <= 10; j++ {
+		fmt.Println("Nilai j =", j)
+	}
 }
