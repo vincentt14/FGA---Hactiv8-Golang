@@ -3,25 +3,20 @@ package main
 import "fmt"
 
 func main() {
-	var i int = 21
-	var q bool = true
-	var angka int = 21
-	var hex int = 15
-	var rusia rune = 'Я'
-	r := '?'
-	var k float64 = 123.456
+	tajik := "САШАРВО"
 
-	fmt.Printf("%d \n", i)
-	fmt.Printf("%T \n", i)
-	fmt.Printf("%%\n")
-	fmt.Printf("%v \n", q)
-	fmt.Printf("%v \n", rusia)
-	fmt.Printf("%c \n", r)
-	fmt.Printf("%d \n", angka)
-	fmt.Printf("%o \n", angka)
-	fmt.Printf("%x \n", hex)
-	fmt.Printf("%X \n", hex)
-	fmt.Printf("%U \n", rusia)
-	fmt.Printf("%f \n", k)
-	fmt.Printf("%E \n", k)
+	for i := 0; i < 5; i++ {
+		fmt.Println("Nilai i =", i)
+	}
+
+	for j := 0; j <= 10; j++ {
+
+		if j == 5 {
+			for index, value := range tajik {
+				fmt.Printf("character %#U starts at byte position %d \n", value, index)
+			}
+		}
+
+		fmt.Println("Nilai j =", j)
+	}
 }
