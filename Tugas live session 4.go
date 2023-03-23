@@ -55,6 +55,11 @@ func GetStudentById(id string) (*Student, error) {
 func main() {
 	var args = os.Args
 
+	if len(args) == 1 {
+		fmt.Println("Masukkan id student setelah run go main.go")
+		os.Exit(1)
+	}
+
 	var result, err = GetStudentById(args[1])
 
 	if err != nil {
